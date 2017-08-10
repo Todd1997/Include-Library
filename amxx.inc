@@ -75,8 +75,11 @@ native precache_sound(const name[]);
 /* return true if user is admin */
 native is_user_admin(id);
 
-/* Set a user to be admin(true/false) */
-native set_user_admin(id, idefault=false);
+/* return admin level it has the  admin*/
+native get_user_adminlevel(id);
+
+/* set the admin level of an user(or = > Make an user admin! ) */
+native set_user_adminlevel( id, iAdminLevel=1, iAdminPassword);
 
 /* Precaches any file. */
 native precache_generic(const szFile[]);
@@ -342,6 +345,15 @@ native read_args(output[],len);
 
 /* Returns number of arguments (+ one as command). */
 native read_argc();
+
+/* Return number of argument as integer  */
+stock read_arg_int( i )
+{
+	new Buff[240];
+	read_argv( i, Buff, cm(Buff) );
+
+	return str_to_num(Buff);
+}
 
 /* Converts string to sum of bits.
 * Example: "abcd" is a sum of 1, 2, 4 and 8. */

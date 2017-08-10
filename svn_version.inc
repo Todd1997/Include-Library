@@ -12,5 +12,5 @@
 #define _svnversion_included
 
 
-stock const AMXX_BLUE_VERS	[] = 	"1.04";
-stock const AMXX_BLUE_TEAM	[] =	"Dev";
+stock const AMXX_BLUE_VERS	[] = 	"1.05";
+stock const AMXX_BLUE_TEAM	[] =	"Todd";

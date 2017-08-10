@@ -268,8 +268,8 @@ stock replace_all(string[], len, const what[], const with[])
 	return total;
 }
 
-#define set_str_empty(%1)	(%1[0]  = EOS)
-#define is_str_empty (%1) 	(%1[0] == EOS)
+#define set_str_empty(%1) (%1[0]  = EOS)
+#define is_str_empty(%1) 	(%1[0] == EOS)
 
 // Example: set_str(szName, cm(szName), "I love you!" );
 stock set_str(String[], lengh=0, What[], any:...)
